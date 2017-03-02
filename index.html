@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+	<title>Street Fighter V Sign Up Sheet</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body onload="fetchPlayers();">
+	<div class="container">
+		<header class="header">
+			<img class="center-block" src="images/header.jpg" width="460" height="215" alt="Street Fighter V" />
+			<h2 class="text-center">SFV Tournament Signup</h2>
+		</header>
+		<main>
+			<div class="jumbotron">
+				<form id="signUpForm">
+					<div class="form-group">
+						<label for="nameInput">Name/Alias</label>
+						<input type="text" class="form-control" id="nameInput" placeholder="Alias..." />
+					</div>
+					<div class="form-group">
+						<label for="characterInput">Characters</label>
+						<input type="text" class="form-control" id="characterInput" placeholder="Characters..." />
+					</div>
+					<div class="form-group">
+						<label for="regionInput">Region</label>
+						<input type="text" class="form-control" id="regionInput" placeholder="USA..." />
+					</div>
+					<p><small>By signing this, you have agreed to all tournament rules.</small></p>
+					<div class="form-group">
+						<label for="signatureInput">Signature</label>
+						<input type="text" class="form-control" id="signatureInput" placeholder="Signature..." />
+					</div>
+					<button type="submit" class="btn btn-danger">Fight!!!</button>
+				</form>
+			</div>
+			<div class="col-lg-12">
+				<div id="playersResults"></div>
+			</div>
+			
+		</main>
+		<footer class="footer">
+      <p>&copy; 2016 Fighting Nation, Inc.</p>
+    </footer>
+	</div>
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</body>
+</html>
